@@ -12,6 +12,11 @@ body {
 }
 
 /* dùng chung */
+button,select{
+  font-family: inherit;
+  font-size: inherit;
+}
+
 a {
   text-decoration: none;
 }
@@ -517,4 +522,253 @@ a {
 
 .install__app {
   margin-top: 38px;
+}
+
+/* code phần blog */
+.blog{
+  padding-bottom: 170px;
+}
+
+.blog-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog__content {
+  width: 40%;
+}
+
+.blog__heading {
+  margin-top: 68px;
+  width: 470px;
+}
+
+.blog__read {
+  margin-top: 28px;
+  display: inline-block;
+  color: #10375c;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.56; /* 155.556% */
+  text-decoration-line: underline;
+}
+
+.blog__control {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 28px;
+}
+
+.blog__wrap {
+  width: 48%;
+  display: flex;
+  gap: 30px;
+}
+
+.blog__thumb {
+  object-fit: cover;
+  width: 270px;
+  height: 172px;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.blog__item{
+  border-radius: 12px;
+background: #FFF;
+box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.blog__body {
+  padding: 18px 24px 21px 22px;
+}
+
+.blog-body__heading {
+  color: #10375c;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.62; /* 162.5% */
+}
+
+.blog-body__desc {
+  margin-top: 10px;
+  color: #575f66;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.71; /* 171.429% */
+}
+
+.blog-body__more {
+  margin-top: 12px;
+  display: inline-block;
+  color: #2e80ce;
+  font-size: 1.4rem 
+  font-weight: 400;
+  line-height: normal;
+}
+
+.blog-body__more:hover{
+  color: #10375C;
+}
+
+/* code phần apoinment */
+.apm{
+  padding-bottom: 170px;
+}
+
+.apm-container{
+  background-color:#F6FBFF;
+  padding: 100px 179px;
+  text-align: center;
+}
+
+.apm__heading{
+  padding-bottom: 38px;
+}
+
+.apm__heading::after{
+  content: "";
+  display: block;
+  width: 136px;
+height: 2px;
+background: #2E80CE;
+margin: 18px auto 0;
+}
+
+.apm__desc{
+  width: 617px;
+  margin: 0 auto;
+}
+
+.apm__btn{
+  margin-top: 53px;
+  display: inline-block;
+}
+
+/* code phần footer */
+.footer{
+  background: #10375C;
+  padding-top: 100px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer__top{
+  display: grid;
+  grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+  grid-auto-flow: column;
+  column-gap: 78px;
+}
+
+.footer__desc{
+  margin-top: 20px;
+  color: #A9B3BB;
+font-size: 1.6rem;
+font-weight: 400;
+line-height: 1.75; /* 175% */
+}
+
+.footer__heading{
+  color: #FFF;
+font-size: 1.6rem;
+font-weight: 600;
+line-height: 28px; /* 175% */
+}
+
+.footer__list{
+  margin: 20px 0 28px;
+}
+
+.footer__link{
+  color: #A9B3BB;
+font-size: 1.4rem;
+font-weight: 400;
+line-height: 1.85; /* 185.714% */
+white-space: nowrap;
+}
+
+.footer__link:hover{
+  text-decoration: underline;
+}
+
+.footer__item{
+  margin-bottom: 10px;
+}
+
+.footer__social{
+  display: flex;
+  column-gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 28px;       
+}
+
+.footer-social__icon{
+  width: 32px;
+height: 32px;
+border-radius: 50%;
+background: #2E80CE;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #fff;
+color: #2E80CE;
+}
+
+.footer-social__icon:hover{
+  background: #2E80CE;
+  color: #FFF;
+}
+
+.footer-desc__c4{
+  color: #A9B3BB;
+font-size: 1.4rem;
+font-weight: 400;
+line-height: 26px; /* 185.714% */
+}
+
+.footer__form{
+  margin-top: 10px;
+  display: flex;
+  column-gap: 12px;
+}
+
+.footer-form__input{
+  width: 212px;
+height: 46px;
+flex-shrink: 0;
+border-radius: 4px;
+border: 1px solid #406181;
+background: #10375C;
+outline: none;
+color: #fff;
+}
+
+.footer-form__input::placeholder{
+  color: #9CA8B1;
+font-size: 1.4rem;
+font-weight: 400;
+line-height: 1.85; /* 185.714% */
+}
+
+.footer-form__btn{
+  width: 108px;
+height: 46px;
+border-radius: 4px;
+background: #2E80CE;
+color: #FFF;
+font-size: 1.4rem;
+font-weight: 600;
+line-height: 1.85; /* 185.714% */
+border: none;
+}
+
+.footer__copyright{
+  border-top: 1px solid #406181;;
+}
+
+.footer-coppyright__text{
+  padding: 28px 0 42px;
+  color: #AAB3BA;
+text-align: center;
+font-size: 1.4rem;
+font-weight: 400;
+line-height: 26px; /* 185.714% */
 }
